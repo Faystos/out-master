@@ -1,8 +1,12 @@
-// @font-face {
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../fonts/play_regular.woff2") format("woff2"), url("../fonts/play_regular.woff") format("woff");
+}
 
-// }
-
-// @font-face {
-
-// }
+@font-face {
+  font-family: "Play Bold";
+  font-display: swap;
+  src: url("../fonts/play_bold.woff2") format("woff2"), url("../fonts/play_bold.woff") format("woff");
+}
 

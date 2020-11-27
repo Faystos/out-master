@@ -1,7 +1,7 @@
 {
-  "name": "Smart-Device",
+  "name": "out_master",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Тестовое задание",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
