@@ -9,8 +9,10 @@
 }
 
 @mixin opacity-link {
-  &:hover {
-    opacity: 0.6;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #9b111e;
   }
 
   &:active {
@@ -21,4 +23,59 @@
 @mixin hide-font {
   font-size: 0;
   line-height: 0;
+}
+
+@mixin opening-menu($width) {
+  animation: slide-menu  1.5s;
+
+  @keyframes slide-menu {
+    0% {
+      display: flex;
+      width: 0;
+      height: 0;
+    }
+
+    100% {
+      width: $width;
+      height: 100vh;
+    }
+  }
+}
+
+@mixin сlosing-menu($width) {
+  animation: сloses-menu  3s;
+
+  @keyframes сloses-menu {
+    0% {
+      width: $width;
+      height: 100vh;
+    }
+
+    100% {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@mixin show-font {
+  animation: increase-font  1.5s;
+
+  @keyframes increase-font {
+    0% {
+      display: none;
+      opacity: 0;
+      color: transparent;
+    }
+
+    50% {
+      color: transparent;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+      color: $main-text-color;
+    }
+  }
 }
