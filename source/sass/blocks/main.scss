@@ -18,7 +18,9 @@
   }
 
   @media (max-width: $table-width) {
-    background-size: 172%;
-    background-position: 50% 58%;
+    height: auto;
+    min-height: 849px;
+    background-size: 275%;
+    background-position: 50% 50%;
   }
 }
