@@ -116,7 +116,8 @@
   }
 
   @media (max-width: $table-width) {
-    margin-bottom: -270px;
+    margin-bottom: 0;
+    background-color: #1b1b1d;
 
     .header__wrap {
       justify-content: flex-end;

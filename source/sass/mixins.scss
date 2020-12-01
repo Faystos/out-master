@@ -25,7 +25,7 @@
   line-height: 0;
 }
 
-@mixin opening-menu($width) {
+@mixin opening-menu($width, $height) {
   animation: slide-menu  1.5s;
 
   @keyframes slide-menu {
@@ -37,18 +37,18 @@
 
     100% {
       width: $width;
-      height: 100vh;
+      height: $height;
     }
   }
 }
 
-@mixin сlosing-menu($width) {
+@mixin сlosing-menu($width, $height) {
   animation: сloses-menu  3s;
 
   @keyframes сloses-menu {
     0% {
       width: $width;
-      height: 100vh;
+      height: $height;
     }
 
     100% {

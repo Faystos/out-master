@@ -287,7 +287,8 @@ a {
       margin-right: 30px; } }
   @media (max-width: 767px) {
     .header {
-      margin-bottom: -270px; }
+      margin-bottom: 0;
+      background-color: #1b1b1d; }
       .header .header__wrap {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
@@ -308,7 +309,6 @@ a {
 .main {
   width: 100%;
   height: 100vh;
-  min-height: 847px;
   background-color: #1b1b1d;
   background-image: url("../img/bg/img_logo.png");
   background-repeat: no-repeat;
@@ -317,15 +317,12 @@ a {
   position: relative; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .main {
-      background-image: url("../../img/bg/img_logo@2x.png"); } }
-  @media (max-width: 1100px) {
-    .main {
-      background-size: 187%; } }
+      background-image: url("../img/bg/img_logo@2x.png"); } }
   @media (max-width: 767px) {
     .main {
       height: auto;
-      min-height: 849px;
-      background-size: 275%;
+      min-height: 517px;
+      background-size: 274%;
       background-position: 50% 50%; } }
 
 .footer {
@@ -405,7 +402,7 @@ a {
       width: 22.8%; } }
   @media (max-width: 767px) {
     .footer {
-      margin-top: -164px; }
+      margin-top: 0; }
       .footer .footer__block_nav {
         display: none; }
       .footer .footer__block_button {
@@ -507,7 +504,7 @@ a {
     height: 0; }
   100% {
     width: 32.5%;
-    height: 100vh; } }
+    height: 100%; } }
 
 @keyframes slide-menu {
   0% {
@@ -518,7 +515,7 @@ a {
     height: 0; }
   100% {
     width: 32.5%;
-    height: 100vh; } }
+    height: 100%; } }
     .main__burger_menu--active .main__burger_logo {
       -webkit-animation: increase-font  1.5s;
               animation: increase-font  1.5s;
@@ -582,7 +579,7 @@ a {
 @-webkit-keyframes сloses-menu {
   0% {
     width: 32.5%;
-    height: 100vh; }
+    height: 100%; }
   100% {
     width: 0;
     height: 0; } }
@@ -590,7 +587,7 @@ a {
 @keyframes сloses-menu {
   0% {
     width: 32.5%;
-    height: 100vh; }
+    height: 100%; }
   100% {
     width: 0;
     height: 0; } }
@@ -607,7 +604,7 @@ a {
         height: 0; }
       100% {
         width: 50%;
-        height: 100vh; } }
+        height: 100%; } }
     @keyframes slide-menu {
       0% {
         display: -webkit-box;
@@ -617,27 +614,27 @@ a {
         height: 0; }
       100% {
         width: 50%;
-        height: 100vh; } }
+        height: 100%; } }
     .main__burger_menu--close {
       -webkit-animation: сloses-menu  3s;
               animation: сloses-menu  3s; }
     @-webkit-keyframes сloses-menu {
       0% {
         width: 50%;
-        height: 100vh; }
+        height: 100%; }
       100% {
         width: 0;
         height: 0; } }
     @keyframes сloses-menu {
       0% {
         width: 50%;
-        height: 100vh; }
+        height: 100%; }
       100% {
         width: 0;
         height: 0; } } }
   @media (max-width: 767px) {
     .main__burger_menu {
-      top: 209px; }
+      top: -56px; }
       .main__burger_menu .main__burger_logo {
         margin-top: 100px; }
       .main__burger_menu .main__burger_nav {
@@ -646,7 +643,7 @@ a {
         -webkit-animation: slide-menu  1.5s;
                 animation: slide-menu  1.5s;
         width: 100%;
-        height: 76%; }
+        height: 111%; }
     @-webkit-keyframes slide-menu {
       0% {
         display: -webkit-box;
@@ -655,7 +652,7 @@ a {
         height: 0; }
       100% {
         width: 100%;
-        height: 100vh; } }
+        height: 111%; } }
     @keyframes slide-menu {
       0% {
         display: -webkit-box;
@@ -665,21 +662,21 @@ a {
         height: 0; }
       100% {
         width: 100%;
-        height: 100vh; } }
+        height: 111%; } }
       .main__burger_menu--close {
         -webkit-animation: сloses-menu  3s;
                 animation: сloses-menu  3s; }
     @-webkit-keyframes сloses-menu {
       0% {
         width: 100%;
-        height: 100vh; }
+        height: 111%; }
       100% {
         width: 0;
         height: 0; } }
     @keyframes сloses-menu {
       0% {
         width: 100%;
-        height: 100vh; }
+        height: 111%; }
       100% {
         width: 0;
         height: 0; } } }

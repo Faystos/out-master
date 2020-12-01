@@ -82,7 +82,7 @@
   }
 
   &--active {
-    @include opening-menu(32.5%);
+    @include opening-menu(32.5%, 100%);
     display: flex;
     width: 32.5%;
     height: 100%;
@@ -104,7 +104,7 @@
   }
 
   &--close {
-    @include сlosing-menu(32.5%);
+    @include сlosing-menu(32.5%, 100%);
     display: flex;
     width: 0;
     height: 0;
@@ -112,17 +112,17 @@
 
   @media (max-width: $desktop-width) {
     &--active {
-      @include opening-menu(50%);
+      @include opening-menu(50%, 100%);
       width: 50%;
     }
 
     &--close {
-      @include сlosing-menu(50%);
+      @include сlosing-menu(50%, 100%);
     }
   }
 
   @media (max-width: $table-width) {
-    top: 209px;
+    top: -56px;
 
     .main__burger_logo {
       margin-top: 100px;
@@ -133,13 +133,13 @@
     }
 
     &--active {
-      @include opening-menu(100%);
+      @include opening-menu(100%, 111%);
       width: 100%;
-      height: 76%;
+      height: 111%;
     }
 
     &--close {
-      @include сlosing-menu(100%);
+      @include сlosing-menu(100%, 111%);
     }
   }
 }

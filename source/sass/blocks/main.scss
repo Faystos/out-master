@@ -1,7 +1,6 @@
 .main {
   width: 100%;
   height: 100vh;
-  min-height: 847px;
   background-color: #1b1b1d;
   background-image: url("../img/bg/img_logo.png");
   background-repeat: no-repeat;
@@ -10,17 +9,13 @@
   position: relative;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/bg/img_logo@2x.png");
-  }
-
-  @media (max-width: $desktop-width) {
-    background-size: 187%;
+    background-image: url("../img/bg/img_logo@2x.png");
   }
 
   @media (max-width: $table-width) {
     height: auto;
-    min-height: 849px;
-    background-size: 275%;
+    min-height: 517px;
+    background-size: 274%;
     background-position: 50% 50%;
   }
 }
